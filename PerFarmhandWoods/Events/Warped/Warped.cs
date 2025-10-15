@@ -34,7 +34,7 @@ namespace PerFarmhandWoods.Events.Warped
             }
             catch (Exception ex)
             {
-                _monitor.Log($"[PFW]: Falha ao redirecionar para {target}: {ex}", LogLevel.Error);
+                _monitor.Log($"[PFW]: Failed to redirect to {target}: {ex}", LogLevel.Error);
             }
             finally
             {

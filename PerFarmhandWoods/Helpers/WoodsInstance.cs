@@ -21,14 +21,14 @@ namespace PerFarmhandWoods.Helpers
 
                 if (!Game1.locationData.TryGetValue("Woods", out var baseData) || baseData?.CreateOnLoad == null)
                 {
-                    monitor.Log($"[PFW]: Data/Locations não contém 'Woods' (CreateOnLoad).", LogLevel.Error);
+                    monitor.Log($"[PFW]: Data/Locations does not contain 'Woods' (CreateOnLoad).", LogLevel.Error);
                     return;
                 }
 
                 var loc = Game1.CreateGameLocation(name, baseData.CreateOnLoad);
                 if (loc == null)
                 {
-                    monitor.Log($"[PFW]: Falha ao criar localização '{name}' a partir de '{_baseWoodsName}'.", LogLevel.Error);
+                    monitor.Log($"[PFW]: Failed to create location '{name}' from '{_baseWoodsName}'.", LogLevel.Error);
                     return;
                 }
 
@@ -55,11 +55,11 @@ namespace PerFarmhandWoods.Helpers
                 }
 
                 Game1.locations.Add(loc);
-                monitor.Log($"[PFW]: Instância criada: {name}", LogLevel.Info);
+                monitor.Log($"[PFW]: Instance created: {name}", LogLevel.Info);
             }
             catch (Exception ex)
             {
-                monitor.Log($"[PFW]: Erro ao garantir instância de Woods: {ex}", LogLevel.Error);
+                monitor.Log($"[PFW]: Error ensuring Woods instance: {ex}", LogLevel.Error);
             }
         }
     }

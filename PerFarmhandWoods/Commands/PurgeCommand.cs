@@ -32,11 +32,11 @@ namespace PerFarmhandWoods.Commands
 
             var eligible = PerFarmhandWoods.Helpers.EligibleFarmers.Get(_helper);
 
-            // Ativa flags de runtime
+            // Activate runtime flags
             Helpers.RuntimeFlags.DisableSaving = true;
             Helpers.RuntimeFlags.PurgeMode = true;
 
-            // Warp seguro: tira qualquer jogador de dentro das Woods_* antes de remover
+            // Safe warp: pull any player out of Woods_* before removing them
             if (eligible is not null)
             {
                 foreach (long uid in eligible)
@@ -53,7 +53,7 @@ namespace PerFarmhandWoods.Commands
                 }
             }
 
-            // Remove todas as Woods_* da lista de locations
+            // Remove every Woods_* from the locations list
             int removed = 0;
             for (int i = Game1.locations.Count - 1; i >= 0; i--)
             {
@@ -65,7 +65,7 @@ namespace PerFarmhandWoods.Commands
                 }
             }
 
-            // Limpa os dados salvos do mod
+            // Clear the mod's saved data
             Helpers.SaveData.WriteSaveData(new Types.PfwSaveData(), _helper);
             Helpers.SaveData.ResetCache();
 

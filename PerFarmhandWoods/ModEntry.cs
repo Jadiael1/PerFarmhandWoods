@@ -7,6 +7,7 @@ using PerFarmhandWoods.Events.DayStarted;
 using PerFarmhandWoods.Events.ReturnedToTitle;
 using PerFarmhandWoods.TileActions;
 using PerFarmhandWoods.Events.AssetRequested;
+using PerFarmhandWoods.Commands;
 
 namespace PerFarmhandWoods
 {
@@ -20,6 +21,7 @@ namespace PerFarmhandWoods
             _ = new PeerConnected(helper, this.Monitor);
             _ = new LoadStageChanged(helper, this.Monitor);
             _ = new Saving(helper);
+            _ = new PurgeCommand(helper, this.Monitor);
             _ = new DayStarted(helper, this.Monitor);
             _ = new ReturnedToTitle(helper, this.Monitor);
         }

@@ -6,5 +6,5 @@
   "UniqueID": "DerexSV.PerFarmhandWoods",
   "EntryDll": "PerFarmhandWoods.dll",
   "MinimumApiVersion": "4.3.2",
-  "UpdateKeys": [ "" ]
+  "UpdateKeys": [ "Nexus:38587" ]
 }

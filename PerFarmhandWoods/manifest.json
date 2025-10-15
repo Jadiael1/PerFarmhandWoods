@@ -1,0 +1,10 @@
+{
+  "Name": "Per Farmhand Woods",
+  "Author": "DerexSV",
+  "Version": "0.1.0",
+  "Description": "Each multiplayer guest has their own Secret Woods; the host keeps the vanilla Woods.n.",
+  "UniqueID": "DerexSV.PerFarmhandWoods",
+  "EntryDll": "PerFarmhandWoods.dll",
+  "MinimumApiVersion": "4.3.2",
+  "UpdateKeys": [ "" ]
+}

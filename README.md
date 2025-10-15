@@ -73,6 +73,14 @@ package, which also deploys the mod directly into the game’s `Mods` folder.
   tiles.
 - Mods that deeply replace the woods map data might need custom patch tweaks.
 
+## Disabling or uninstalling
+
+If you decide to retire the mod mid-save, run the SMAPI console command
+`pfw_purge`. It removes every personal woods instance, halts the mod’s saving
+logic, and disables the custom warps for the remainder of the session. After
+running it, sleep to save the day, exit the game, and delete the mod before
+launching Stardew Valley again.
+
 ## Contribution and redistribution policy
 
 - Forks or redistributions that alter the mod to release “alternate editions” are

@@ -76,6 +76,14 @@ que tambem envia o mod diretamente à pasta `Mods` do jogo.
 - Mods que substituem profundamente os dados do mapa da floresta podem exigir
   ajustes manuais no patch.
 
+## Desativar ou desinstalar
+
+Se quiser aposentar o mod no meio do salvamento, execute o comando de console do
+SMAPI `pfw_purge`. Ele remove todas as instâncias pessoais da floresta, interrompe
+a lógica de salvamento do mod e desativa os warps personalizados pelo restante da
+sessão. Depois de rodá-lo, durma para salvar o dia, feche o jogo e exclua o mod
+antes de iniciar Stardew Valley novamente.
+
 ## Política de contribuições e redistribuição
 
 - Não autorizo forks ou redistribuições que alterem o mod para lançar “edições

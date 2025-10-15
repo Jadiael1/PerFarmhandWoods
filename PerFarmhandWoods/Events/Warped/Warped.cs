@@ -50,6 +50,8 @@ namespace PerFarmhandWoods.Events.Warped
             if (Context.IsMainPlayer)
                 return;
 
+            if (PerFarmhandWoods.Helpers.RuntimeFlags.PurgeMode) return;
+
             if (!string.Equals(e.NewLocation?.Name, "Woods", StringComparison.Ordinal))
                 return;
 

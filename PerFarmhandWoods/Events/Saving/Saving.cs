@@ -22,6 +22,9 @@ namespace PerFarmhandWoods.Events.Saving
             if (!Context.IsMainPlayer)
                 return;
 
+            if (PerFarmhandWoods.Helpers.RuntimeFlags.DisableSaving)
+                return;
+
             // rewrites the list from what is in the world (idempotent)
             PfwSaveData? data = new();
             foreach (GameLocation? loc in Game1.locations)

@@ -22,6 +22,8 @@ namespace PerFarmhandWoods.Events.PeerConnected
             if (!Context.IsMainPlayer)
                 return;
             
+            if (PerFarmhandWoods.Helpers.RuntimeFlags.PurgeMode) return;
+            
             PerFarmhandWoods.Helpers.WoodsInstance.Ensure(e.Peer.PlayerID, _monitor);
         }
     }

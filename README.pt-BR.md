@@ -1,3 +1,5 @@
+*[English](README.md) · **Português (Brasil)***
+
 # Per Farmhand Woods
 
 Per Farmhand Woods é um mod de Stardew Valley que dá a cada convidado do modo
